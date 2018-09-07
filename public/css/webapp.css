@@ -1,0 +1,102 @@
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px!important;
+    margin: 0 8%;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    margin: 0 8%;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.container-fluid {
+    margin: 0!important;
+    padding: 0!important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    box-shadow: 0px -6px 2px 6px grey;
+}
+
+.navbar-fix {
+    position: fixed!important;
+    z-index: 2!important;
+    width: 100%!important;
+    margin: 0!important;
+    box-shadow: 0px -6px 2px 6px grey;
+}
+
+footer {
+    width: 100%!important;
+    box-shadow: 0px 4px 3px 4px grey;
+    display: flex;
+    margin: 0!important;
+    justify-content: center;
+}
+
+.footer {
+    position: fixed!important;
+    z-index: 2!important;
+    width: 100%!important;
+    bottom: 0;
+    box-shadow: 0px 4px 3px 4px grey;
+    display: flex;
+    margin: 0!important;
+    justify-content: center;
+}
+
+.body>.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    padding: 20px 10px;
+    min-height: 100px;
+}
+
+div.row div.col-lg-12 {
+    display: flex;
+    overflow: auto;
+    padding: 5px;
+}
+
+.fa,
+.far,
+.fas {
+    font-size: 20px;
+}
+
+.badge {
+    font-size: 12px;
+    color: grey;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
