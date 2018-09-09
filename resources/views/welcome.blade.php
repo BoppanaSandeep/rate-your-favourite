@@ -62,44 +62,10 @@
                                 <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Sandeep</h5>
-                                    <span>Comments</span>
                                     <div class="card-text">
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
                                     </div>
                                 </div>
                                 <div class="card-footer">
@@ -115,44 +81,10 @@
                                 <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Sandeep</h5>
-                                    <span>Comments</span>
                                     <div class="card-text">
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
                                     </div>
                                 </div>
                                 <div class="card-footer">
@@ -168,44 +100,10 @@
                                 <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Sandeep</h5>
-                                    <span>Comments</span>
                                     <div class="card-text">
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
                                     </div>
                                 </div>
                                 <div class="card-footer">
@@ -221,44 +119,10 @@
                                 <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Sandeep</h5>
-                                    <span>Comments</span>
                                     <div class="card-text">
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 text-primary">Name</div>
-                                            <div class="col-12">Hi</div>
-                                            <div class="col-12">
-                                                <div class="col-4 text-primary">like</div>
-                                                <div class="col-4 text-primary">dislike</div>
-                                                <div class="col-4 text-primary">comment</div>
-                                            </div>
-                                        </div>
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
+                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
                                     </div>
                                 </div>
                                 <div class="card-footer">

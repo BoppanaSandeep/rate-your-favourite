@@ -31,10 +31,10 @@ $(function() {
 
     $('.comment').popover({
         animation: true,
-        content: "<textarea class='form-control' name='comment' /></textarea><br><button class='btn btn-outline-primary btn-sm btn-block'>Save</button>",
+        content: setComments(),
         html: true,
-        placement: 'auto',
-        title: "<span class='text-primary'>Comment</span><span class='fa float-right font-weight-bold text-danger'>&times;</span>",
+        placement: 'left',
+        title: `<span class='text-primary'>Comment</span><span class='fa float-right font-weight-bold text-danger' onclick='return $(".comment").popover("hide");'>&times;</span>`,
         trigger: 'click',
         fallbackPlacement: 'flip'
     })
@@ -43,3 +43,26 @@ $(function() {
         $(".comment").not(this).popover('hide');
     })
 })
+
+function setComments(){
+    return `
+    <div class="row comments">
+        <div class="col-12 morecomments">
+            <div class="row">
+                <div class="col-12 text-primary">Name</div>
+                <div class="col-12">Comment</div>
+                <div class="col-12">
+                    <div class="col-4 text-primary">like</div>
+                    <div class="col-4 text-primary">dislike</div>
+                    <div class="col-4 text-primary">poke</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row commenthere">
+                <div class="col-12"><textarea class='form-control' name='comment'></textarea></div>
+                <div class="col-12"><button class='btn btn-outline-primary btn-sm btn-block '>Save</button></div>
+            </div>
+        </div>
+    </div>`;
+}
