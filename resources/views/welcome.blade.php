@@ -26,7 +26,8 @@
                         role="button" aria-expanded="false" aria-controls="add-your-favourite">Add your favourite</a>
                     <div class="collapse" id="add-your-favourite">
                         <div class="card card-body">
-                            <form onsubmit="return false;">
+                            <form name="add-your-favourite-form" id="add-your-favourite-form" method="POST" action="/addyourfavouriteform" enctype="multipart/form-data" onsubmit="return true;">
+                                @csrf
                                 <div class="form-group">
                                     <label for="add-your-fav-name">Today's Favourite</label>
                                     <input type="text" class="form-control" name="add-your-fav-name" id="add-your-fav-name"

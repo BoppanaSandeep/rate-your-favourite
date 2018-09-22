@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'UserController@index');
+Route::post('addyourfavouriteform', 'UserController@setAddYourFavourite');
