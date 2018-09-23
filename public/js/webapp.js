@@ -2,6 +2,8 @@ $(function() {
 
     $('.body').css('min-height', (window.innerHeight) + 'px')
 
+    getFavPosts()
+
     if (window.innerWidth > 991) {
         $('#add-your-favourite').collapse('show')
     } else {
@@ -42,6 +44,7 @@ $(function() {
     $(".comment").click(function(){
         $(".comment").not(this).popover('hide');
     })
+
 })
 
 function setComments(){
@@ -65,4 +68,42 @@ function setComments(){
             </div>
         </div>
     </div>`;
+}
+
+function getFavPosts(){
+    $.get('/getfavposts', null, function(posts){
+        console.log($.parseJSON(posts));
+        var template = '';
+        $.each($.parseJSON(posts).posts, function(key, value){
+            template+=`<div class="col-12 col-sm-5 col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="` + value.favImage + `" alt="post dp" onclick="viewImage(this);">
+                                <div class="card-body">
+                                    <h5 class="card-title">` + value.favName + `</h5>
+                                    <div class="card-text">
+                                        ` + value.favComment + `
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="card-link"><i class="far fa-heart"></i>&nbsp;<span class="badge badge-light">9</span></a>
+                                    <a class="card-link comment"><i class="far fa-comment-alt"></i>&nbsp;<span class="badge badge-light">9</span></a>
+                                    <a class="card-link"><span class="badge badge-light">3min
+                                            ago</span></a>
+                                </div>
+                            </div>
+                        </div>`
+        })
+        $("#fav-posts").append(template);
+    })
+}
+
+function viewImage(el){
+    console.log(el.src);
+    $("body").append(`<div class="view-image"><i class="view-image fas fa-times text-danger"></i><img class="view-image" src="` + el.src + `" alt="post dp" /></div>`);
+    $(".container-fluid").addClass("pointer-events-none");
+
+    $(".view-image.fas.fa-times.text-danger").click(function(){
+        $(this).parent().remove();
+        $(".container-fluid").removeClass("pointer-events-none");
+    })
 }

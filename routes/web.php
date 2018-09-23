@@ -17,3 +17,4 @@
 
 Route::get('/', 'UserController@index');
 Route::post('addyourfavouriteform', 'UserController@setAddYourFavourite');
+Route::get('getfavposts', 'UserController@getFavPosts');

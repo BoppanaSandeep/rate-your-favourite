@@ -35,11 +35,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="add-your-fav-name">Favourite picture</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" name="fav-pic" id="fav-pic"
+                                    <input type="file" class="form-control" name="fav-pic" id="fav-pic"
                                             aria-describedby="fav-pic">
-                                        <label class="custom-file-label" for="fav-pic">Choose file</label>
-                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="comment">Comment</label>
@@ -57,8 +54,8 @@
                     <div class="col-12">
                         <a class="btn btn btn-outline-light btn-lg btn-block text-primary">Today Favourites</a>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="col-12 col-sm-5 col-md-4">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="fav-posts">
+                        {{-- <div class="col-12 col-sm-5 col-md-4">
                             <div class="card">
                                 <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
                                 <div class="card-body">
@@ -133,7 +130,7 @@
                                             ago</span></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

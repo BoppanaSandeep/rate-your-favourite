@@ -50,4 +50,10 @@ class UserController extends Controller
             return redirect()->action('UserController@index');
         }
     }
+
+    public function getFavPosts()
+    {
+        $response = DB::table('favourite')->get();
+        echo json_encode(array("posts" => $response));
+    }
 }
