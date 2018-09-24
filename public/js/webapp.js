@@ -71,11 +71,11 @@ function setComments(){
 }
 
 function getFavPosts(){
-    $.get('/getfavposts', null, function(posts){
+    $.get('./getfavposts', null, function(posts){
         console.log($.parseJSON(posts));
         var template = '';
         $.each($.parseJSON(posts).posts, function(key, value){
-            template+=`<div class="col-12 col-sm-5 col-md-4">
+            template+=`<div class="col-12 col-sm-5 col-md-4 mb-4">
                             <div class="card">
                                 <img class="card-img-top" src="` + value.favImage + `" alt="post dp" onclick="viewImage(this);">
                                 <div class="card-body">
@@ -94,16 +94,30 @@ function getFavPosts(){
                         </div>`
         })
         $("#fav-posts").append(template);
+
+        $('.comment').popover({
+            animation: true,
+            content: setComments(),
+            html: true,
+            placement: 'left',
+            title: `<span class='text-primary'>Comment</span><span class='fa float-right font-weight-bold text-danger' onclick='return $(".comment").popover("hide");'>&times;</span>`,
+            trigger: 'click',
+            fallbackPlacement: 'flip'
+        })
+
+        $(".comment").click(function(){
+            $(".comment").not(this).popover('hide');
+        })
     })
 }
 
 function viewImage(el){
     console.log(el.src);
-    $("body").append(`<div class="view-image"><i class="view-image fas fa-times text-danger"></i><img class="view-image" src="` + el.src + `" alt="post dp" /></div>`);
+    $("body").append(`<div class="view-image" onclick="removeImage(this);"><img class="view-image" src="` + el.src + `" alt="post dp" /></div>`);
     $(".container-fluid").addClass("pointer-events-none");
+}
 
-    $(".view-image.fas.fa-times.text-danger").click(function(){
-        $(this).parent().remove();
-        $(".container-fluid").removeClass("pointer-events-none");
-    })
+function removeImage(el){
+    $(el).remove();
+    $(".container-fluid").removeClass("pointer-events-none");
 }

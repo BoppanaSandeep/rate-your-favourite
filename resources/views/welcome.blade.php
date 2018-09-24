@@ -8,12 +8,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Rate your favourite</title>
-    <link rel="icon" href="images/heart_green.ico">
-    <link href="css/app.css" rel="stylesheet" />
-    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
-    <link href="css/webapp.css" rel="stylesheet" />
-    <script src="js/app.js"></script>
-    <script src="js/webapp.js"></script>
+    <link rel="icon" href="public/images/heart_green.ico">
+    <link href="public/css/app.css" rel="stylesheet" />
+    <link href="public/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="public/css/webapp.css" rel="stylesheet" />
+    <script src="public/js/app.js"></script>
+    <script src="public/js/webapp.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                         role="button" aria-expanded="false" aria-controls="add-your-favourite">Add your favourite</a>
                     <div class="collapse" id="add-your-favourite">
                         <div class="card card-body">
-                            <form name="add-your-favourite-form" id="add-your-favourite-form" method="POST" action="/addyourfavouriteform" enctype="multipart/form-data" onsubmit="return true;">
+                            <form name="add-your-favourite-form" id="add-your-favourite-form" method="POST" action="./addyourfavouriteform" enctype="multipart/form-data" onsubmit="return true;">
                                 @csrf
                                 <div class="form-group">
                                     <label for="add-your-fav-name">Today's Favourite</label>
@@ -54,83 +54,10 @@
                     <div class="col-12">
                         <a class="btn btn btn-outline-light btn-lg btn-block text-primary">Today Favourites</a>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="fav-posts">
-                        {{-- <div class="col-12 col-sm-5 col-md-4">
-                            <div class="card">
-                                <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sandeep</h5>
-                                    <div class="card-text">
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="card-link"><i class="far fa-heart"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link comment"><i class="far fa-comment-alt"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link"><span class="badge badge-light">3min
-                                            ago</span></a>
-                                </div>
-                            </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="row" id="fav-posts">
+
                         </div>
-                        <div class="col-12 col-sm-5 col-md-4">
-                            <div class="card">
-                                <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sandeep</h5>
-                                    <div class="card-text">
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="card-link"><i class="far fa-heart"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link comment"><i class="far fa-comment-alt"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link"><span class="badge badge-light">3min
-                                            ago</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-5 col-md-4">
-                            <div class="card">
-                                <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sandeep</h5>
-                                    <div class="card-text">
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="card-link"><i class="far fa-heart"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link comment"><i class="far fa-comment-alt"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link"><span class="badge badge-light">3min
-                                            ago</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-5 col-md-4">
-                            <div class="card">
-                                <img class="card-img-top" src="images/wallpaper.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sandeep</h5>
-                                    <div class="card-text">
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                        SRYETT DJYFYUYTYUFJY FY F JFYF ert erter trtwtwrt wrt wrt wt wt werrt
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="card-link"><i class="far fa-heart"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link comment"><i class="far fa-comment-alt"></i>&nbsp;<span class="badge badge-light">9</span></a>
-                                    <a class="card-link"><span class="badge badge-light">3min
-                                            ago</span></a>
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>

@@ -1,5 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand text-success"  href="javascript:void(0);"><i class="fas fa-heart"></i>&nbsp;Rate your favourite</a>
+    <a class="navbar-brand text-success"  href="javascript:void(0);">
+        {{-- <i class="fas fa-heart"></i> --}}
+        <img class="m-auto" src="public/images/heart_green.ico" />
+        &nbsp;Rate your favourite
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

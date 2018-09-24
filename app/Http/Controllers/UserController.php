@@ -35,13 +35,13 @@ class UserController extends Controller
         $file->getMimeType();
 
         //Move Uploaded File
-        $destinationPath = 'uploads';
+        $destinationPath = 'public/uploads';
         $file->move($destinationPath, date("YmdHis") . $file->getClientOriginalName());
         $favData = array(
             'userId' => 1,
             'favName' => $request->input('add-your-fav-name'),
             'favComment' => $request->input('comment'),
-            'favImage' => "uploads/" . date("YmdHis") . $file->getClientOriginalName(),
+            'favImage' => $destinationPath . "/" . date("YmdHis") . $file->getClientOriginalName(),
         );
 
         $response = DB::table('favourite')->insert($favData);
@@ -53,7 +53,7 @@ class UserController extends Controller
 
     public function getFavPosts()
     {
-        $response = DB::table('favourite')->get();
+        $response = DB::table('favourite')->orderBy('favAdded', 'DESC')->get();
         echo json_encode(array("posts" => $response));
     }
 }
