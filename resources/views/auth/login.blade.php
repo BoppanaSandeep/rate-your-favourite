@@ -7,7 +7,18 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+                     @if (count($errors) > 0)
+                    <ul style="list-style-type: none;padding-left: 0px;text-align: center;margin-bottom: 20px;">
+                      @foreach($errors->all() as $error)
+                        <li style="font-size:13px;color: #F44336;font-weight: bold;">{!! $error !!}</li>
+                      @endforeach
+                    </ul>
+                  @else
+                    <ul style="list-style-type: none;padding-left: 0px;text-align: center;margin-bottom: 20px;">
+                        <li style="font-size:13px;color: rgb(245, 7, 51);font-weight: bold;">&nbsp;</li>
+                    </ul>
+                  @endif
+                    <form method="POST" action="{{ URL('authen') }}" aria-label="{{ __('Login') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -45,7 +56,7 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn-link" href="{{ URL('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                             </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
@@ -14,12 +15,16 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth')->action('logins');
     }
 
     public function index()
     {
-        return view("welcome");
+        if (!Auth::check()) {
+            return redirect('login');
+        } else {
+            return view("welcome");
+        }
     }
 
     public function setAddYourFavourite(Request $request)
