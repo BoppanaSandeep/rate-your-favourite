@@ -21,9 +21,16 @@
         @include('navbar')
         <div class="body">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                    <a class="btn btn btn-outline-light btn-lg btn-block text-primary" data-toggle="collapse" href="#add-your-favourite"
-                        role="button" aria-expanded="false" aria-controls="add-your-favourite">Add your favourite</a>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4" id="aurf-form-block">
+                    <div class="row align-items-center">
+                        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-2">
+                            <button class="btn btn-link" id="left-arrow"><i class="fas fa-arrow-left"></i></button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                            <a class="btn btn btn-outline-light btn-lg btn-block text-primary" data-toggle="collapse" href="#add-your-favourite"
+                            role="button" aria-expanded="false" aria-controls="add-your-favourite">Add your favourite</a>
+                        </div>
+                    </div>
                     <div class="collapse" id="add-your-favourite">
                         <div class="card card-body">
                             <form name="add-your-favourite-form" id="add-your-favourite-form" method="POST" action="./addyourfavouriteform" enctype="multipart/form-data" onsubmit="return true;">
@@ -50,9 +57,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                    <div class="col-12">
-                        <a class="btn btn btn-outline-light btn-lg btn-block text-primary">Today Favourites</a>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8" id="today-fav-block">
+                    <div class="row align-items-center">
+                        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-2">
+                            <button class="btn btn-link d-none" id="right-arrow"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                            <a class="btn btn btn-outline-light btn-lg btn-block text-primary">Today Favourites</a>
+                        </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="row" id="fav-posts">

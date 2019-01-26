@@ -43,7 +43,25 @@ $(function() {
 
     $(".comment").click(function(){
         $(".comment").not(this).popover('hide');
-    })
+    });
+
+    $("#left-arrow").click(function(){
+        $("#aurf-form-block").addClass("d-none");
+        $("#right-arrow").removeClass("d-none");
+        $("#today-fav-block").removeClass("col-lg-8");
+        $("#today-fav-block").addClass("col-lg-12");
+        $("#fav-posts>div").removeClass("col-md-4");
+        $("#fav-posts>div").addClass("col-md-3");
+    });
+
+    $("#right-arrow").click(function(){
+        $("#aurf-form-block").removeClass("d-none");
+        $("#right-arrow").addClass("d-none");
+        $("#today-fav-block").removeClass("col-lg-12");
+        $("#today-fav-block").addClass("col-lg-8");
+        $("#fav-posts>div").removeClass("col-md-3");
+        $("#fav-posts>div").addClass("col-md-4");
+    });
 
 })
 
